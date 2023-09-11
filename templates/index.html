@@ -1,0 +1,89 @@
+{% include 'header.html' %}
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center" style="height: 100vh">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="../static/assets/img/avataaars.svg" alt="..." />
+                <!-- Masthead Heading-->
+                <h3 class="masthead-heading text-uppercase" style="font-size: 25px; font-weight:600">Welcome to</h3>
+                <h1 class="masthead-heading text-uppercase mb-0">RLKL's PORFOLIO</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="{{url_for('contact')}}">
+                        Contact me
+                    </a>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <span style="display: inline-block; transform: rotate(90deg); font-size:30px">>></span>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio" style="height: 65vh">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="../static/assets/img/portfolio/cabin.png" alt="..." />
+                        </div>
+                    </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">Hi! I'm Ryan. This website was made using Bootstrap and Flask to showcase my projects and allow people to be able to see what I'm up to!</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">I currently freelance and develop personal projects I can add to my CV to hopefully land that next big job.<br>Take a look at it below:</p></div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                        <i class="fas fa-download me-2"></i>
+                        Resume/CV
+                    </a>
+                </div>
+            </div>
+        </section>
+        {% include 'footer.html' %}
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
