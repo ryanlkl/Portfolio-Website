@@ -14,13 +14,15 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                </div>
                 <div class="text-center mt-4">
                     <a class="btn btn-xl btn-outline-light" href="{{url_for('contact')}}">
                         Contact me
                     </a>
                 </div>
-                <br>
-                <br>
                 <br>
                 <br>
                 <br>
@@ -46,25 +48,32 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="../static/assets/img/portfolio/cabin.png" alt="..." />
-                        </div>
+                    <img class="img-fluid" src="../static/assets/img/portfolio/cabin.png" alt="..." />
                     </div>
+                </div>
         </section>
         <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
+        <section class="page-section bg-primary text-white mb-0" id="license_and_certification">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white">Licenses and Certification</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Hi! I'm Ryan. This website was made using Bootstrap and Flask to showcase my projects and allow people to be able to see what I'm up to!</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">I currently freelance and develop personal projects I can add to my CV to hopefully land that next big job.<br>Take a look at it below:</p></div>
+                <div class="row justify-content-center">
+                    <div class="card" style="width: 18rem; background-color: rgba(0, 0, 0, 0.4);">
+                        <img src="../static/assets/img/certificates/commonwealth-bank.png" class="card-img-top" alt="..." style="margin-bottom: 10px; margin-top: 10px">
+                        <div class="card-body">
+                            <div class="overlay row justify-content-center">
+                                <h5 class="card-title">Intro to Software Engineering</h5>
+                                <p class="card-text">HTML, CSS, Bootstrap</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
@@ -79,7 +88,7 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="../static/js/scripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

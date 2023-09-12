@@ -15,6 +15,20 @@
       <div class="row justify-content-center">
           <div class="col-lg-8 col-xl-7">
             {{ render_form(form,novalidate=True) }}
+            <br>
+          {% with messages = get_flashed_messages() %}
+            {% if messages %}
+              <ul class="flashes">
+                {% for message in messages %}
+                  {% if error %}
+                    <li style="color:rgb(255,104,104)">{{ message }}</li>
+                  {% else %}
+                    <li style="color:rgb(0, 255, 102)">{{ message }}</li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endif %}
+          {% endwith %}
           </div>
       </div>
   </div>
